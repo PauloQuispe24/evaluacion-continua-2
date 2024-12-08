@@ -1,5 +1,22 @@
-<h1>Creación del pipe truncate</h1>
+<mat-card class="truncate-card">
+  <mat-card-header>
+    <mat-card-title>Creación del Pipe Truncate</mat-card-title>
+  </mat-card-header>
 
-<p>{{ "Hola" | truncate }}</p>
-<p>{{ "Angular es genial" | truncate:8 }}</p>
-<p>{{ "Este es un ejemplo de un texto mucho más largo para probar el pipe truncate" | truncate:25 }}</p>
+  <mat-card-content>
+    <h2>Ejemplo de uso del pipe truncate:</h2>
+
+    <p><strong>Texto original:</strong> "Hola" </p>
+    <p><strong>Texto truncado:</strong> {{ "Hola" | truncate }}</p>
+
+    <p><strong>Texto original:</strong> "Angular es genial" </p>
+    <p><strong>Texto truncado:</strong> {{ "Angular es genial" | truncate:8 }}</p>
+
+    <p><strong>Texto original:</strong> "Este es un ejemplo de un texto mucho más largo para probar el pipe truncate" </p>
+    <p><strong>Texto truncado:</strong> {{ "Este es un ejemplo de un texto mucho más largo para probar el pipe truncate" | truncate:25 }}</p>
+
+    <div class="button-container">
+      <button mat-raised-button color="primary" (click)="goHome()">Volver al Home</button>
+    </div>
+  </mat-card-content>
+</mat-card>

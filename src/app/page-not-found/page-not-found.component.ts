@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { TruncatePipe } from '../truncate.pipe';
 import { MaterialModule } from '../angular-material/material/material.module';
 import { ActivatedRoute, Router} from '@angular/router';
 
 @Component({
-  selector: 'app-truncate',
-  imports: [TruncatePipe, MaterialModule],
-  templateUrl: './truncate.component.html',
-  styleUrl: './truncate.component.css'
+  selector: 'app-page-not-found',
+  imports: [MaterialModule],
+  templateUrl: './page-not-found.component.html',
+  styleUrl: './page-not-found.component.css'
 })
-export class TruncateComponent {
+export class PageNotFoundComponent {
 
   constructor(private router: Router, private route: ActivatedRoute) {}
 
